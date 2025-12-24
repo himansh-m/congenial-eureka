@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int binsearch(int x, int v[], int n);
+int binsearch(int x, const int v[], int n);
 
 int main() {
   int v[100], x, n;
@@ -19,7 +19,7 @@ int main() {
   printf("Index: %d\n", binsearch(x, v, n));
 }
 
-int binsearch(int x, int v[], int n) {
+int binsearch(int x, const int v[], int n) {
 
   int low = 0, high = n - 1, mid;
 

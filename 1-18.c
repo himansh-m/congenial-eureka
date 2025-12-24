@@ -19,7 +19,7 @@ int main() {
 
 void function(char line[]) {
   for (int i = strlen(line) - 1; i >= 0; i++) {
-    if (line[i] != '\t' || line[i] != ' ') {
+    if (line[i] != '\t' && line[i] != ' ') {
       break;
     } else {
       line[i] = '\0';

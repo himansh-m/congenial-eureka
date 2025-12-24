@@ -6,13 +6,13 @@
 int main() {
   printf("From Header: \n");
   printf("signed char: (%d)-(%d)\n", SCHAR_MIN, SCHAR_MAX);
-  printf("unsigned char: (%u)-(%u)\n", 0, UCHAR_MAX);
+  printf("unsigned char: (%i)-(%i)\n", 0, UCHAR_MAX);
   printf("signed int: (%d)-(%d)\n", INT_MIN, INT_MAX);
-  printf("unsigned int: (%u)-(%u)\n", 0, UINT_MAX);
+  printf("unsigned int: (%i)-(%i)\n", 0, UINT_MAX);
   printf("signed long: (%ld)-(%ld)\n", LONG_MIN, LONG_MAX);
   printf("unsigned long: (%d)-(%lu)\n", 0, ULONG_MAX);
   printf("signed short: (%d)-(%d)\n", SHRT_MIN, SHRT_MAX);
-  printf("unsigned short: (%u)-(%u)\n", 0, USHRT_MAX);
+  printf("unsigned short: (%i)-(%i)\n", 0, USHRT_MAX);
   printf("float: (%e)-(%e)\n", -FLT_MAX, FLT_MAX);
   printf("double: (%e)-(%e)\n\n", -DBL_MAX, DBL_MAX);
 
@@ -25,7 +25,7 @@ int main() {
 
   unsigned ucmax;
   ucmax = pow(2, (sizeof(char) * 8)) - 1;
-  printf("unsigned char: (%u)-(%u)\n", 0, ucmax);
+  printf("unsigned char: (%i)-(%u)\n", 0, ucmax);
 
   int simin, simax;
   simin = -pow(2, (sizeof(int) * 8) - 1);
@@ -34,7 +34,7 @@ int main() {
 
   unsigned int uimax;
   uimax = pow(2, (sizeof(int) * 8)) - 1;
-  printf("unsigned int: (%u)-(%u)\n", 0, uimax);
+  printf("unsigned int: (%i)-(%u)\n", 0, uimax);
 
   long slmin, slmax;
   slmin = -pow(2, (sizeof(long) * 8) - 1);
@@ -52,7 +52,7 @@ int main() {
 
   int usmax;
   usmax = pow(2, (sizeof(short) * 8)) - 1;
-  printf("unsigned short: (%u)-(%u)\n", 0, usmax);
+  printf("unsigned short: (%i)-(%i)\n", 0, usmax);
 
   return 0;
 }

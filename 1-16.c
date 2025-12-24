@@ -1,8 +1,8 @@
 #include <stdio.h>
 #define MAXLINE 1000
 
-int rgetline(char line[]);
-void copy(char to[], char from[]);
+int rgetline(char s[]);
+void copy(char to[], const char from[]);
 
 int main() {
   int len;
@@ -41,7 +41,7 @@ int rgetline(char s[]) {
   return i;
 }
 
-void copy(char to[], char from[]) {
+void copy(char to[], const char from[]) {
   int i;
 
   i = 0;

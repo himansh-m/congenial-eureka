@@ -8,7 +8,7 @@ int main() {
   word[80] = '\0';
 
   while ((c = getchar()) != EOF) {
-    if ((c != ' ' || c != '\t' || c != '\n') && charcount <= 80) {
+    if ((c != ' ' && c != '\t' && c != '\n') && charcount <= 80) {
       word[index++] = c;
       charcount++;
     } else if (c == ' ' && charcount <= 79) {

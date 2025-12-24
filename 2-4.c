@@ -3,7 +3,7 @@
 #include <string.h>
 
 void squeeze(char s1[], char s2[]);
-bool find(char c, char s2[]);
+bool find(char c, const char s2[]);
 
 int main() {
   char s1[1000], s2[1000];
@@ -33,7 +33,7 @@ void squeeze(char s1[], char s2[]) {
   }
 }
 
-bool find(char c, char s2[]) {
+bool find(char c, const char s2[]) {
   for (size_t i = 0; i < strlen(s2); i++) {
     if (s2[i] == c) {
       return true;

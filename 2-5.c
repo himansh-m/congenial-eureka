@@ -1,8 +1,8 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-int any(char s1[], char s2[]);
-bool present(char c, char s2[], int length);
+int any(char s1[], const char s2[]);
+bool present(char c, const char s2[], int length);
 
 int main() {
   char s1[1000], s2[1000];
@@ -19,7 +19,7 @@ int main() {
   return 0;
 }
 
-int any(char s1[], char s2[]) {
+int any(char s1[], const char s2[]) {
 
   int s2length, s1length;
   int i = 0, j = 0;
@@ -43,7 +43,7 @@ int any(char s1[], char s2[]) {
   return -1;
 }
 
-bool present(char c, char s2[], int length) {
+bool present(char c, const char s2[], int length) {
   for (int i = 0; i < length; i++) {
     if (c == s2[i]) {
       return true;

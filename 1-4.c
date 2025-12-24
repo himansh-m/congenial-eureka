@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  float fahr, celsius;
+  
   int lower, step, upper;
 
   lower = 0;
   step = 20;
   upper = 300;
 
+  float fahr, celsius;
   celsius = lower;
   printf("Celsius\t\tFahrenheit\n");
 

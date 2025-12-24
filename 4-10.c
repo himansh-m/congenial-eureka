@@ -95,7 +95,7 @@ void push(double value) {
   }
 }
 
-bool getline(char line[]) {
+bool getline(char line[100]) {
   int index = 0, c;
   while (((c = getchar()) != EOF) && (c != '\n')) {
     line[index++] = c;
